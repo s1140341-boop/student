@@ -1,15 +1,15 @@
 #include <iostream>
 
-int main()
-{
-    int a = 5 + 3;   
-    int b = 5 - 3;   
-    int c = 5 * 3;   
-    int d = 5 / 3;   
-    double e = 5 / 3.0;   
-    int f = 5 % 3;
-    
-    std::cout << a << " " << b << " " << c << " " << d << " " << e << " " << f << " ";
-
+int main() {
+    std::cout <<"ENTER YOUR NAME";
+    int age;
+    std::cin >> age;
+    if (age >= 18) {
+        std::cout << "YOU CAN WATCH PORNHUB.COM ";
+        
+    }
+    if (age < 18) {
+        std::cout << "GO TO STUDY WITHOUT PORN ";
+    }
     return 0;
 }
