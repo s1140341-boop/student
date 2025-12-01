@@ -1,29 +1,14 @@
 #include <iostream>
-using namespace std;
 
-int main() {
-    double height, weight, bmi;
-
-    cout << "請輸入身高(cm): ";
-    cin >> height;
-
-    cout << "請輸入體重(kg): ";
-    cin >> weight;
-
-    // 將身高轉換為公尺
-    height = height / 100.0;
-
-    // 計算 BMI
-    bmi = weight / (height * height);
-
-    cout << "您的 BMI = " << bmi << endl;
-    if (18.5 > bmi) {
-        cout << "體重too skinny" << endl;
-    }else if (24.9 > bmi) {
-        cout << "體重normal" << endl;
-    }else {
-        cout << "體重too fat" << endl;
-    }
+int main()
+{
+    int sum = 0;
+    for (int i=1;i<6;i++) {
+        std::cout << "now i sum:" << i << std::endl;
+        sum = sum + i;
+        std::cout << "the number of circle:" << sum << std::endl;
+        }
+        std::cout << "1+..+5 equal:" << sum;
     
-   return 0;
+    return 0;
 }
